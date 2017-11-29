@@ -501,8 +501,12 @@
                                 <%
                                             }
                                         }
-                                    }
+                                    } else {
                                 %>
+                                <tr>
+                                    <div style="padding:10px"><fmt:message key="all.roles.assigned"/></div>
+                                </tr>
+                                <%  } %>
                             </table>
                             <carbon:paginator pageNumber="<%=pageNumber%>"
                                               action="post"
